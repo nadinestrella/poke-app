@@ -6,7 +6,12 @@ import Detail from '@/views/Detail.vue';
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
-  { path: '/detail', name: 'Detail', component: Detail },
+  {
+    path: '/pokemon/:id',
+    name: 'pokemon-detail',
+    component: Detail,
+    props: true,
+  },
 ];
 
 const router = createRouter({

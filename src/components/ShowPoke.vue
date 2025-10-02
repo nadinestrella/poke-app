@@ -2,6 +2,10 @@
 import Button from './Button.vue';
 import { usePokemonTeam } from '@/composables/usePokemonTeam';
 import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+const isDetailPage = route.name === 'pokemon-detail';
 
 const props = defineProps({
   pokemon: {
@@ -65,9 +69,14 @@ const isInTeam = computed(() => {
           color="cancel"
           @click="removeFromTeam"
         />
-        <span></span>
 
-        <router-link to="detail" class="detail">See Details</router-link>
+        <router-link
+          v-if="!isDetailPage"
+          :to="{ name: 'pokemon-detail', params: { id: pokemon.id } }"
+          class="detail"
+        >
+          See Details</router-link
+        >
       </div>
     </div>
   </section>

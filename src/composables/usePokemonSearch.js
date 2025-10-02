@@ -54,5 +54,5 @@ export function usePokemonSearch() {
   function onSearch() {
     fetchPokemon(query.value);
   }
-  return { query, loading, error, pokemon, onSearch };
+  return { query, loading, error, pokemon, onSearch, fetchPokemon };
 }
