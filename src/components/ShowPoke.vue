@@ -47,6 +47,7 @@ const isInTeam = computed(() => {
     <div v-else>
       <h2>{{ pokemon.name }}</h2>
       <img :src="pokemon.image" :alt="pokemon.name" />
+
       <div class="properties">
         <span class="property">Weight: {{ pokemon.weight }}</span>
         <span class="property">Height: {{ pokemon.height }}</span>
@@ -64,6 +65,9 @@ const isInTeam = computed(() => {
           color="cancel"
           @click="removeFromTeam"
         />
+        <span></span>
+
+        <router-link to="detail" class="detail">See Details</router-link>
       </div>
     </div>
   </section>
@@ -104,6 +108,14 @@ const isInTeam = computed(() => {
   margin-top: 10px;
 }
 
+.detail {
+  color: rgb(142, 133, 133);
+  text-decoration: none;
+}
+
+.detail:hover {
+  color: #191970;
+}
 /* .add-button {
   padding: 10px;
   border: 0;
