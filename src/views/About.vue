@@ -19,17 +19,22 @@
       </div>
 
       <div class="social">
-        <a href="https://www.linkedin.com/in/nadinestrellavacas/"
-          >This is my Linkedin</a
-        >
-        <a href="https://github.com/nadinestrella">This is my Github</a>
-        <a href="https://nadinestrella.vercel.app/">This is mi Portfolio</a>
+        <a
+          href="https://www.linkedin.com/in/nadinestrellavacas/"
+          target="_blank"
+          >This is my Linkedin <font-awesome-icon :icon="['fab', 'linkedin']"
+        /></a>
+        <a href="https://github.com/nadinestrella" target="_blank"
+          >This is my Github <font-awesome-icon :icon="['fab', 'github']"
+        /></a>
+        <a href="https://nadinestrella.vercel.app/" target="_blank"
+          >This is mi Portfolio <font-awesome-icon :icon="['fas', 'user']"
+        /></a>
       </div>
     </div>
-
-    <!-- SOCIAL -->
   </div>
 </template>
+
 <style scoped>
 .title {
   color: #191970;
@@ -65,6 +70,19 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .social a {
+    text-decoration: none;
+    color: #191970;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .social a:hover {
+    color: rgb(227, 125, 211);
   }
 }
 </style>
