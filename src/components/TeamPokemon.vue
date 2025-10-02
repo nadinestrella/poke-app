@@ -48,6 +48,7 @@ const team = computed(() => {
 .team {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 10px;
 }
 

@@ -37,6 +37,8 @@ const { query, onSearch, pokemon, loading, error } = usePokemonSearch();
     border: 1px solid #191970;
     border-radius: 10px;
     padding: 5px;
+    width: 100%;
+    height: 20px;
   }
 
   .search {

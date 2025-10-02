@@ -21,9 +21,14 @@ defineProps({
   color: white;
   border: 1px solid #191970;
   border-radius: 10px;
-  padding: 5px;
+  padding: 8px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: white;
+  color: #191970;
 }
 .accept {
   background-color: green;
@@ -33,6 +38,10 @@ defineProps({
   border-radius: 20px;
   margin: 0 10px;
 }
+.accept:hover {
+  background-color: rgb(208, 234, 208);
+  color: green;
+}
 
 .cancel {
   border: 1px solid firebrick;
@@ -41,5 +50,9 @@ defineProps({
   background-color: firebrick;
   border-radius: 20px;
   color: white;
+}
+.cancel:hover {
+  background-color: rgb(236, 167, 148);
+  color: firebrick;
 }
 </style>

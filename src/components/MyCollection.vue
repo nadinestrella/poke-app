@@ -8,7 +8,7 @@ const pokemonTeam = usePokemonTeam();
 <template>
   <div class="container">
     <h3 class="title">My Collection</h3>
-    <div v-if="pokemonTeam.team.length > 0">
+    <div v-if="pokemonTeam.team.length > 0" class="text">
       <ShowPoke
         v-for="pokemon in pokemonTeam.team"
         :key="pokemon.id"
@@ -16,7 +16,7 @@ const pokemonTeam = usePokemonTeam();
         size="small"
       />
     </div>
-    <div v-else>You haven’t added any Pokémon yet</div>
+    <div v-else class="text">You haven’t added any Pokémon yet</div>
   </div>
 </template>
 
@@ -29,6 +29,10 @@ const pokemonTeam = usePokemonTeam();
   margin-bottom: 20px;
 
   .title {
+    color: #191970;
+    text-align: center;
+  }
+  .text {
     color: #191970;
   }
 }

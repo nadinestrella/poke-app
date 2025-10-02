@@ -6,12 +6,13 @@ import TeamPokemon from './components/TeamPokemon.vue';
 </script>
 
 <template>
-  <header>
-    <h1>Pokémon</h1>
+  <header class="header">
+    <h1 class="title">Pokémon</h1>
+    <img class="img" src="@/assets/pokeball.png" alt="pokeball" />
   </header>
   <main>
     <div>
-      <p>Discover and collect your favorite Pokémon</p>
+      <p class="subtitle">Discover and collect your favorite Pokémon</p>
       <TeamPokemon />
       <ShowPokemon />
       <SearchPokemon />
@@ -28,5 +29,23 @@ body {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  .title {
+    color: #191970;
+  }
+  .img {
+    height: 35px;
+    width: auto;
+  }
+}
+.subtitle {
+  color: #191970;
 }
 </style>
