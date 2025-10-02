@@ -47,6 +47,7 @@ export function usePokemonSearch() {
       error.value = 'Tuvimos problemas con la consulta';
     } finally {
       loading.value = false;
+      query.value = '';
     }
   }
 

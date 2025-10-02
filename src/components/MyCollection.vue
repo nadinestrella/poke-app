@@ -8,7 +8,7 @@ const pokemonTeam = usePokemonTeam();
 <template>
   <div class="container">
     <h3 class="title">My Collection</h3>
-    <div v-if="pokemonTeam.team.length > 0" class="text">
+    <div v-if="pokemonTeam.team.length > 0" class="pokeContainer">
       <ShowPoke
         v-for="pokemon in pokemonTeam.team"
         :key="pokemon.id"
@@ -32,8 +32,21 @@ const pokemonTeam = usePokemonTeam();
     color: #191970;
     text-align: center;
   }
+
+  .pokeContainer {
+    display: flex;
+    flex-direction: column;
+  }
   .text {
     color: #191970;
+  }
+  @media (min-width: 768px) {
+    .pokeContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
   }
 }
 </style>

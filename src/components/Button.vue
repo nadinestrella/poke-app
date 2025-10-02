@@ -27,7 +27,7 @@ defineProps({
   transition: all 0.3s ease;
 }
 .button:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #191970;
 }
 .accept {
