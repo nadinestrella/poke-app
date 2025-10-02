@@ -17,7 +17,6 @@ import TeamPokemon from '@/components/TeamPokemon.vue';
       <ShowPokemon />
       <SearchPokemon />
       <MyCollection />
-      hola
     </div>
   </main>
 </template>
