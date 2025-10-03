@@ -48,7 +48,7 @@ import Title from '@/components/Title.vue';
   .subtitle {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px;
     margin-bottom: 50px;
 
