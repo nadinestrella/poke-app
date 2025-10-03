@@ -1,9 +1,10 @@
-<script></script>
+<script setup>
+import Title from '@/components/Title.vue';
+</script>
 
 <template>
   <div>
-    <h2 class="title">About me</h2>
-
+    <Title label="About me"></Title>
     <div class="container">
       <div class="subtitle">
         <img class="img" src="@/assets/nadineLego.jpeg" alt="Nadine as Lego" />

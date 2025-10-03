@@ -1,7 +1,8 @@
 <script setup>
+import { useAllPokemon } from '@/composables/useAllPokemon';
 import Button from '@/components/Button.vue';
 import ShowPoke from '@/components/ShowPoke.vue';
-import { useAllPokemon } from '@/composables/useAllPokemon';
+import Title from '@/components/Title.vue';
 
 const {
   pokemons,
@@ -15,6 +16,7 @@ const {
 </script>
 
 <template>
+  <Title label="All Pokémon"></Title>
   <!-- TODO:Loading Component -->
   <div v-if="loading">Loading Pokemon...</div>
   <div v-else-if="error">{{ error }}</div>
@@ -25,7 +27,7 @@ const {
   <div class="pagination">
     <!-- TODO: Pagination Component -->
     <Button
-      label="Prev"
+      label=" Prev"
       @click="prevPage"
       :disabled="currentPage === 1"
     ></Button>
