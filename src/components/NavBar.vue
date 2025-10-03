@@ -5,11 +5,11 @@
     <router-link to="/" class="nav-link" exact-active-class="active"
       >Home</router-link
     >
-    <router-link to="/about" class="nav-link" exact-active-class="active"
-      >About Me</router-link
-    >
     <router-link to="/all" class="nav-link" exact-active-class="active"
       >All Pokémon</router-link
+    >
+    <router-link to="/about" class="nav-link" exact-active-class="active"
+      >About Me</router-link
     >
   </nav>
 </template>

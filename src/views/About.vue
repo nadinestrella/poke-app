@@ -12,7 +12,7 @@
 
       <div class="info">
         <p>
-          I am a <strong>Frontend Developer</strong> and I love creating
+          I am a <strong> Junior Frontend Developer</strong> and I love creating
           interactive applications and learning new things every day.
         </p>
         <p>This application is built with <strong>Vue + Vite</strong> .</p>

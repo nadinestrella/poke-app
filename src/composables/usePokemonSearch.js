@@ -28,7 +28,6 @@ export function usePokemonSearch() {
       }
 
       const data = await res.json();
-      console.log(data);
 
       const image =
         data?.sprites?.other?.['official-artwork']?.front_default ||
