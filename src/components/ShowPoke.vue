@@ -84,7 +84,7 @@ const isInTeam = computed(() => {
 
 <style scoped>
 .card {
-  margin: 20px auto;
+  margin: 15px auto;
   padding: 15px;
   width: 300px;
   border: 1px solid #ccc;
